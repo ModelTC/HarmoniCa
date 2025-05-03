@@ -12,7 +12,7 @@ This is the official implementation of our paper [HarmoniCa](https://arxiv.org/p
 
 <div align=center>
 	<figure class="second">
-	    <img src="./img/DiT.png" width="540"/><img src="./img/pixart.png" width="320"/>
+	    <img src="./img/DiT.png" width="440"/><img src="./img/pixart.png" width="270"/>
 	</figure>
 </div>
 
@@ -29,7 +29,7 @@ This is the official implementation of our paper [HarmoniCa](https://arxiv.org/p
 ## Overview
 
 <p>
-<img src= ./img/overview.png width="760"/>
+<img src= ./img/overview.png width="700"/>
 </p>
 
 
