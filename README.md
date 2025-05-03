@@ -8,7 +8,7 @@
 
 (* denotes equal contribution, 📧 denotes corresponding author.)
 
-This is the official implementation of our paper [HarmoniCa](https://arxiv.org/pdf/2410.01723), a novel training-based framework that achieves a new state-of-the-art result in block-wise caching of diffusion transformers. It achieves over $40\%$ latency reduction (*i.e.*, $2.07\times$ theoretical speedup) and improved performance on PixArt- $\alpha$. Remarkably, our *image-free* approach reduces training time by $25\%$ compared with the previous method.
+This is the official implementation of our paper [HarmoniCa](https://arxiv.org/pdf/2410.01723), a novel training-based framework that achieves a new state-of-the-art result in block-wise caching of diffusion transformers. It achieves over 40% latency reduction (*i.e.*, $2.07\times$ theoretical speedup) and improved performance on PixArt- $\alpha$. Remarkably, our *image-free* approach reduces training time by 25\% compared with the previous method.
 
 <div align=center>
 	<figure class="second">
