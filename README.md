@@ -4,7 +4,7 @@
 [![arXiv](https://img.shields.io/badge/HarmoniCa-2410.01723-b31b1b)](https://arxiv.org/pdf/2410.01723)
 [![GitHub Stars](https://img.shields.io/github/stars/ModelTC/TFMQ-DM.svg?style=social&label=Star&maxAge=60)](https://github.com/ModelTC/HarmoniCa)
 
-[Yushi Huang*](https://github.com/Harahan), [Zining Wang*](https://scholar.google.com/citations?user=hOXoacgAAAAJ&hl=en), [Ruihao Gong📧](https://xhplus.github.io/), [Jing Liu](https://jing-liu.com/), [Xinjie Zahang](https://xinjie-q.github.io/), [Jinyang Guo](https://jinyangguo.github.io/), [Xianglong Liu](https://xlliu-beihang.github.io/), [Jun Zhang📧](https://eejzhang.people.ust.hk/)
+[Yushi Huang*](https://github.com/Harahan), [Zining Wang*](https://scholar.google.com/citations?user=hOXoacgAAAAJ&hl=en), [Ruihao Gong📧](https://xhplus.github.io/), [Jing Liu](https://jing-liu.com/), [Xinjie Zhang](https://xinjie-q.github.io/), [Jinyang Guo](https://jinyangguo.github.io/), [Xianglong Liu](https://xlliu-beihang.github.io/), [Jun Zhang📧](https://eejzhang.people.ust.hk/)
 
 (* denotes equal contribution, 📧 denotes corresponding author.)
 
