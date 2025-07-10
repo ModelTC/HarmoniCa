@@ -20,7 +20,7 @@ This is the official implementation of our paper [HarmoniCa](https://arxiv.org/p
 	    <img src="./img/DiT.png" width="440"/><img src="./img/pixart.png" width="270"/>
 	</figure>
 	
-<h align="justify">(Left) Generation comparison on DiT-XL/2 $256\times256$. (Right) Generation results on PixArt-$\Sigma$ $2048\times2048$. HarmoniCa shows nearly lossless $1.44\times$ and $1.73\times$ acceleration for the above models, respectively. 
+<h align="justify">(Left) Generation comparison on DiT-XL/2 $256\times256$. (Right) Generation results on PixArt- $\Sigma$ $2048\times2048$. HarmoniCa shows nearly lossless $1.44\times$ and $1.73\times$ acceleration for the above models, respectively. 
 </h>
 </div>
 
