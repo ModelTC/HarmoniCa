@@ -1,11 +1,11 @@
-# 🎵 HarmoniCa: Harmonizing Training and Inference for Better Feature Caching in Diffusion Transformer Acceleration
-<div align="center">
+<div align="center" style="font-family: charter;">
+<h1> 🎵 HarmoniCa: Harmonizing Training and Inference for Better Feature Caching in Diffusion Transformer Acceleration</h1>
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![arXiv](https://img.shields.io/badge/HarmoniCa-2410.01723-b31b1b)](https://arxiv.org/pdf/2410.01723)
-[![GitHub Stars](https://img.shields.io/github/stars/ModelTC/HarmoniCa.svg?style=social&label=Star&maxAge=60)](https://github.com/ModelTC/HarmoniCa)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)&nbsp;
+[![arXiv](https://img.shields.io/badge/HarmoniCa-2410.01723-b31b1b)](https://arxiv.org/pdf/2410.01723)&nbsp;
+[![GitHub Stars](https://img.shields.io/github/stars/ModelTC/HarmoniCa.svg?style=social&label=Star&maxAge=60)](https://github.com/ModelTC/HarmoniCa)&nbsp;
 
-**[ [conference paper](https://arxiv.org/abs/2410.01723) | [slides](assets/slides.pdf) | [poster](assets/poster.pdf) ]**
+**[ [Conference Paper](https://arxiv.org/abs/2410.01723) | [Slides](assets/slides.pdf) | [Poster](assets/poster.pdf) ]**
 
 [Yushi Huang*](https://github.com/Harahan), [Zining Wang*](https://scholar.google.com/citations?user=hOXoacgAAAAJ&hl=en), [Ruihao Gong📧](https://xhplus.github.io/), [Jing Liu](https://jing-liu.com/), [Xinjie Zhang](https://xinjie-q.github.io/), [Jinyang Guo](https://jinyangguo.github.io/), [Xianglong Liu](https://xlliu-beihang.github.io/), [Jun Zhang📧](https://eejzhang.people.ust.hk/)
 
@@ -19,30 +19,30 @@ This is the official implementation of our paper [HarmoniCa](https://arxiv.org/p
 	<figure class="second">
 	    <img src="./img/DiT.png" width="440"/><img src="./img/pixart.png" width="270"/>
 	</figure>
+	
+<h align="justify">(Left) Generation comparison on DiT-XL/2 $256\times256$. (Right) Generation results on PixArt- $\Sigma$ $2048\times2048$. HarmoniCa shows nearly lossless $1.44\times$ and $1.73\times$ acceleration for the above models, respectively.  More qualitative and quantitative results can be found in our paper.
+</h>
 </div>
 
+## :fire: News
 
-(Left) Generation comparison on DiT-XL/2 $256\times256$. (Right) Generation results on PixArt- $\Sigma$ $2048\times2048$. HarmoniCa shows nearly lossless $1.44\times$ and $1.73\times$ acceleration for the above models, respectively.  More qualitative and quantitative results can be found in our paper.
+* **May 03, 2025**: 🔥 We release our Python code for DiT-XL/2 presented in our paper. Have a try!
 
-## News
-
-* **May 3, 2025**: 🔥 We release our Python code for DiT-XL/2 presented in our paper. Have a try!
-
-* **May 1, 2025**: 🌟 Our paper has been accepted by ICML 2025! 🎉 Cheers!
+* **May 01, 2025**: 🌟 Our paper has been accepted by ICML 2025! 🎉 Cheers!
 
 
-## Overview
+## 📖 Overview
 
-<div align="center">
-<p>
-<img src= ./img/overview.png width="700"/>
-</p>
-</div>
+<div align="center" style="font-family: charter;">
 
+<img src=./img/overview.png width="80%"/>
 
-Diffusion Transformers (DiTs) excel in generative tasks but face practical deployment challenges due to high inference costs. Feature caching, which stores and retrieves redundant computations, offers the potential for acceleration. Existing learning-based caching, though adaptive, overlooks the impact of the prior timestep. It also suffers from misaligned objectives— aligned predicted noise vs. high-quality images— between training and inference. These two discrepancies compromise both performance and efficiency. To this end, we harmonize training and inference with a novel learning-based caching framework dubbed HarmoniCa. It first incorporates Step-Wise Denoising Training (SDT) to ensure the continuity of the denoising process, where prior steps can be leveraged. In addition, an Image Error Proxy-Guided Objective (IEPO) is applied to balance image quality against cache utilization through an efficient proxy to approximate the image error. Extensive experiments across $8$ models, $4$ samplers, and resolutions from $256\times256$ to $2K$ demonstrate superior performance and speedup of our framework.
+<h align="justify"><strong>Overview pipeline of the proposed HarmoniCa.</strong> It first incorporates Step-Wise Denoising Training (SDT) to ensure the continuity of the denoising process, where prior steps can be leveraged. In addition, an Image Error Proxy-Guided Objective (IEPO) is applied to balance image quality against cache utilization through an efficient proxy to approximate the image error.
+</h>
 
-## Quick Start
+</div>    
+
+## ✨ Quick Start
 
 After cloning the repository, you can follow these steps to complete the model's training and inference process.
 
@@ -72,15 +72,16 @@ Here is the corresponding command for inference.
 python sample.py --model DiT-XL/2 --vae ema --image-size 256 --num-classes 1000 --cfg-scale 4 --num-sampling-steps 10 --seed 42 --accelerate-method dynamiclayer --ddim-sample --path Path/To/The/Trained/Router/ --thres 0.1
 ```
 
-## TODO
+## 💪 TODO
 
-* Training and inference code for PixArt models.
+- [ ] Training and inference code for PixArt models.
+- [ ] Combination with quantization.
 
-## Acknowledgments
+## 🤝 Acknowledgments
 
 Our code was developed based on [DiT](https://github.com/facebookresearch/DiT) and [Learning-to-Cache](https://github.com/horseee/learning-to-cache).
 
-## Citation
+## ✏️ Citation
 
 If you find our HarmoniCa useful or relevant to your research, please kindly cite our paper:
 
